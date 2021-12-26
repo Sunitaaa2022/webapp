@@ -4,12 +4,6 @@ pipeline    {
        maven 'jenkins-maven' 
     }
     stages {
-
-        stage('Downloading') {
-            steps {
-                git 'https://github.com/Mr-KaaLi/webapp.git'
-            }    
-        }
         
         stage('Build') {
             steps {
